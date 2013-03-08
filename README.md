@@ -1,7 +1,7 @@
 xframe
 ======
 
-xfr is a nano library to help use HTML5 standard window.postMessage for communicate iframes between cross-domain sites
+xfr is a nano JavaScript library to help use HTML5 standard window.postMessage for communicate iframes between cross-domain sites
 
 	xfr()
 		.allowOrigins(
