@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="./js/xframe.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	xfr()
+		.allowOrigins(
+			['http://localhost:3000']
+		)
+		.onMessage(
+			function (p_xfr, p_origin, p_json) {
+				switch ( p_origin ) {
+					case 'http://localhost:3000':
+						p_xfr.msg('http://localhost:3001', { 'from' : 'remote2', 'to' : 'remote1', 'ts' : (new Date()).getTime() } );
+						break;
+				}				
+			}
+		)
+	;
+</script>
+</body>
+</html>

@@ -1,8 +1,9 @@
-xframe
-======
-
-xfr is a nano library to help use HTML5 standard window.postMessage for communicate iframes between cross-domain sites
-
+<html>
+<head>
+<script type="text/javascript" src="./js/xframe.js"></script>
+</head>
+<body>
+<script type="text/javascript">
 	xfr()
 		.allowOrigins(
 			['http://localhost:3001']
@@ -29,5 +30,6 @@ xfr is a nano library to help use HTML5 standard window.postMessage for communic
 		)
 		.create ( 'http://localhost:3002/remote2.html' )
 	;
-
-
+</script>
+</body>
+</html>

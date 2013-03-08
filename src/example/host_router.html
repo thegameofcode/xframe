@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript" src="./js/xframe.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	xfr()
+		.allowOrigins(
+			[ 'http://localhost:3001', 'http://localhost:3002' ]
+		)
+		.router(
+			{
+				'xframe_remote_1' : 'http://localhost:3001'
+			,
+				'xframe_remote_2' : 'http://localhost:3002'
+			}
+		)
+	;
+</script>
+</body>
+</html>
